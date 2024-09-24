@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./script.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div>
+        <h1>Calculate Area</h1>
+    </div>
+    <div class="box">
+        <div>
+            <h1>Square</h1>
+            <div id="square" class="square" onclick="showInput('square')"> </div>
+        </div>
+        <div>
+            <h1>Circle</h1>
+            <div class="circle" class="circle" onclick="showInput('circle')"></div>
+        </div>
+        <div>
+            <h1>Triangle</h1>
+            <div class="triangle" class="triangle" onclick="showInput('triangle')"></div>
+        </div>
+    </div>
+
+    <div id="inputSquare" class="input-section">
+        <h2>Enter Area of square</h2>
+        <input id="squareInput" class="inputStyle" type="number" placeholder="Enter number">
+        <div class="bottonBox">
+            <button onclick="calculation('square')">Calculate</button>
+        </div>
+        
+    </div>
+
+    <div id="inputCircle" class="input-section">
+        <h2>Enter radius of circle</h2>
+        <input id="circleInput" class="inputStyle" type="number" placeholder="Enter number">
+        <div class="bottonBox">
+            <button onclick="calculation('circle')">Calculate</button>
+        </div>
+        
+    </div>
+
+    <div id="inputTriangle" class="input-section">
+        <h2>Enter Base</h2>
+        <input id="baseInput" class="inputStyle" type="number" placeholder="Enter Base">
+        <h2>Enter Height</h2>
+        <input id="heightInput" class="inputStyle" type="number" placeholder="Enter Height">
+        <div class="bottonBox">
+            <button onclick="calculation('triangle')">Calculate</button>
+        </div>
+        
+    </div>
+
+    <div id="ansButton" class="answer" style="display: none;">
+        <h2 id="areaOutput"></h2>
+    </div>
+    
+</body>
+</html>

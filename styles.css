@@ -1,0 +1,74 @@
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.triangle{
+    width: 0;
+	height: 0;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	border-bottom: 50px solid #555;
+}
+.triangle:hover{
+    border-bottom: 50px solid #ff0000;
+}
+.circle{
+    height: 50px;
+    width: 50px;
+    background-color: #555;
+    border-radius: 50%;
+}
+.circle:hover{
+    background-color: rgb(12, 163, 39);
+}
+.square{
+    height: 50px;
+    width: 50px;
+    background-color: #555;
+}
+.square:hover{
+    background-color: rgb(13, 0, 255);
+}
+#inputSquare{
+    display: none;
+    margin-top: 5%;
+}
+#inputTriangle{
+    display: none;
+    margin-top: 5%;
+}
+#inputCircle{
+    display: none;
+    margin-top: 5%;
+}
+.inputStyle{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 2%;
+    padding: 10px;
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    font-size: 16px; 
+}
+h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+button{
+    width: 20%;
+    height: 5vh;
+    border-radius: 5%;
+}
+.bottonBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2%;
+}
+.answer{
+    display: none;
+}
