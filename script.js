@@ -1,11 +1,9 @@
 function showInput(shape) {
-    // Hide all input sections
     const inputSections = document.querySelectorAll('.input-section');
     inputSections.forEach(section => {
         section.style.display = 'none';
     });
 
-    // Show the relevant input section based on the shape clicked
     const input = document.getElementById(`input${shape.charAt(0).toUpperCase() + shape.slice(1)}`);
     input.style.display = 'block';
     console.log(`You clicked ${shape.charAt(0).toUpperCase() + shape.slice(1)}`);
